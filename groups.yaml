@@ -1,0 +1,75 @@
+Tech_tab:
+  view: yes
+  icon: mdi:chip
+  entities:
+    - group.Tech
+    - group.PiHole
+
+Security_tab:
+  view: yes
+  icon: mdi:cctv
+  entities:
+    - group.Ring_image
+    - group.Ring
+
+Media_tab:
+  view: yes
+  icon: mdi:play-circle-outline
+  entities:
+    - group.Media
+    - remote.bedroom
+    - remote.living_room
+
+Weather_tab:
+  view: yes
+  icon: mdi:weather-sunny
+  entities:
+    - group.Weather
+    - group.Health
+
+Ring_image:
+  - camera.front
+
+Ring:
+  - binary_sensor.ring_front_motion
+  - sensor.ring_front_last_motion
+  - sensor.ring_front_last_activity
+  - sensor.ring_front_wifi_signal_category
+
+Tech:
+  - switch.bedroom_fan
+  - switch.coffee_maker
+  - sensor.iphone_battery_level
+  - sensor.iphone_battery_state
+
+Pi-Hole:
+  - sensor.pihole_ads_blocked_today
+  - sensor.pihole_ads_percentage_blocked_today
+  - sensor.pihole_domains_blocked
+  - sensor.pihole_dns_unique_clients
+
+Weather:
+  - sensor.dark_sky_daily_summary
+  - sensor.dark_sky_hourly_summary
+  - sensor.dark_sky_temperature
+  - sensor.dark_sky_apparent_temperature
+  - sensor.dark_sky_humidity
+  - sensor.dark_sky_cloud_coverage
+  - sensor.dark_sky_precip_probability
+  - sensor.dark_sky_daily_max_precip_intensity
+  - sensor.dark_sky_wind_speed
+  - sensor.dark_sky_pressure
+
+Health:
+  - sensor.dark_sky_uv_index
+  - sensor.allergy_index_today
+  - sensor.allergy_index_tomorrow
+  - sensor.cold__flu_forecasted_average
+
+Media:
+  - media_player.living_room
+  - media_player.bedroom_2
+  - media_player.bathroom
+  - media_player.bedroom
+  - media_player.living_room_speaker
+  - media_player.office

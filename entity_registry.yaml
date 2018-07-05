@@ -1,0 +1,85 @@
+media_player.living_room:
+  config_entry_id:
+  name: Apple TV - Living Room
+  platform: apple_tv
+  unique_id: ab06c876b3251409483d7271807bec02d357b39b2ba357f62ab4ff0b52d5c502
+remote.living_room:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: ab06c876b3251409483d7271807bec02d357b39b2ba357f62ab4ff0b52d5c502
+switch.bedroom_fan:
+  config_entry_id:
+  name:
+  platform: wemo
+  unique_id: 221741K010D8EA
+media_player.bedroom:
+  config_entry_id:
+  name: Google Home - Bedroom
+  platform: cast
+  unique_id: d2773356-7cf3-78e8-ed50-ddffd069723b
+media_player.living_room_speaker:
+  config_entry_id: 7801c916dfda4cf6982b2e94f296e226
+  name: Google Home - Living Room
+  platform: cast
+  unique_id: 9aa68955-0130-ee8c-f374-4f59a1a3213c
+media_player.office:
+  config_entry_id: 7801c916dfda4cf6982b2e94f296e226
+  name: Google Home  - Kitchen
+  platform: cast
+  unique_id: e9980a27-5b5e-f879-163c-2fc083f61eac
+media_player.bathroom:
+  config_entry_id: 7801c916dfda4cf6982b2e94f296e226
+  name: Google Home - Bathroom
+  platform: cast
+  unique_id: 5041ec37-dbd9-a66f-1c4c-40bfd5133404
+sensor.cold__flu_forecasted_average:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 33445_cold__flu_forecasted_average
+sensor.allergy_index_historical_average:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 33445_allergy_index_historical_average
+sensor.allergy_index_forecasted_average:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 33445_allergy_index_forecasted_average
+sensor.allergy_index_today:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 33445_allergy_index_today
+sensor.allergy_index_tomorrow:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 33445_allergy_index_tomorrow
+sensor.allergy_index_yesterday:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 33445_allergy_index_yesterday
+media_player.bedroom_2:
+  config_entry_id:
+  name: Apple TV - Bedroom
+  platform: apple_tv
+  unique_id: 71cd0a0f80c1aa5d367f2c131fbd150120c9585b58d1b79264201507ad17b2c5
+remote.bedroom:
+  config_entry_id:
+  name:
+  platform: apple_tv
+  unique_id: 71cd0a0f80c1aa5d367f2c131fbd150120c9585b58d1b79264201507ad17b2c5
+sensor.iphone_battery_level:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: level_Dan's iPhone
+sensor.iphone_battery_state:
+  config_entry_id:
+  name:
+  platform: ios
+  unique_id: state_Dan's iPhone
