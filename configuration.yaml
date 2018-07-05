@@ -43,7 +43,7 @@ updater:
 discovery:
 
 # Allows you to issue voice commands from the frontend in enabled browsers
-conversation:
+# conversation:
 
 # Enables support for tracking state changes over time
 history:
@@ -126,6 +126,23 @@ sensor:
       - ads_percentage_today
       - domains_being_blocked
       - unique_clients
+  - platform: cpuspeed
+  - platform: speedtest
+    minute:
+      - 0
+      - 30
+    monitored_conditions:
+      - ping
+      - download
+      - upload
+  - platform: systemmonitor
+    resources:
+      - type: disk_use_percent
+        arg: /home
+      - type: memory_use_percent
+      - type: processor_use
+      - type: load_5m
+      - type: since_last_boot
 
 binary_sensor:
   - platform: ring

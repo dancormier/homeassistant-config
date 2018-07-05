@@ -3,6 +3,7 @@ Tech_tab:
   icon: mdi:chip
   entities:
     - group.Tech
+    - group.PiStats
     - group.PiHole
 
 Security_tab:
@@ -35,6 +36,16 @@ Ring:
   - sensor.ring_front_last_motion
   - sensor.ring_front_last_activity
   - sensor.ring_front_wifi_signal_category
+
+Pi-Stats:
+  - sensor.disk_use_percent_home
+  - sensor.memory_use_percent
+  - sensor.processor_use
+  - sensor.load_5m
+  - sensor.since_last_boot
+  - sensor.speedtest_download
+  - sensor.speedtest_upload
+  - sensor.speedtest_ping
 
 Tech:
   - switch.bedroom_fan
