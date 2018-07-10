@@ -18,6 +18,7 @@ homeassistant:
 
 # Enables the frontend
 frontend:
+  themes: !include themes.yaml
 
 # Enables configuration UI
 config:
@@ -118,7 +119,6 @@ sensor:
     zip_code: "33445"
     monitored_conditions:
       - allergy_index_today
-      - allergy_index_tomorrow
       - disease_average_forecasted
   - platform: pi_hole
     monitored_conditions:
@@ -143,6 +143,17 @@ sensor:
       - type: processor_use
       - type: load_5m
       - type: since_last_boot
+  - platform: command_line
+    name: CPU Temperature
+    command: "cat /sys/class/thermal/thermal_zone0/temp"
+    unit_of_measurement: "°F"
+    value_template: '{{ (value | multiply(0.001) * 1.8 + 32) | round(1) }}'
+
+device_tracker:
+  - platform: tplink
+    host: 192.168.0.1
+    username: !secret router_username
+    password: !secret router_password
 
 binary_sensor:
   - platform: ring

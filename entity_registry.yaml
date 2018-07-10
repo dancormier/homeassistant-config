@@ -83,3 +83,18 @@ sensor.iphone_battery_state:
   name:
   platform: ios
   unique_id: state_Dan's iPhone
+media_player.chrome:
+  config_entry_id:
+  name:
+  platform: plex
+  unique_id: fmkl7br49nsv3t17wxhna5cu
+media_player.plex_web_chrome:
+  config_entry_id:
+  name:
+  platform: plex
+  unique_id: n6454xpoqxf
+sensor.cold__flu_forecasted_average_2:
+  config_entry_id:
+  name:
+  platform: pollen
+  unique_id: 33445_disease_average_forecasted
